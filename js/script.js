@@ -1,3 +1,12 @@
+let hamburger = document.querySelector('.header_hamburger'),
+    menu = document.querySelector('.li');
+
+
+hamburger.addEventListener('click', ()=>{
+    hamburger.classList.toggle('header_hamburger_active');
+    menu.classList.toggle('li_active')
+})
+
 function onEntry(entry) {
     entry.forEach(change => {
       if (change.isIntersecting) {
